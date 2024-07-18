@@ -50,5 +50,18 @@ public class SimpleDate {
 
         return this.year - other.year - yearRemoved;
     }
+    
+    //Honestly I don't understand this at all ): -> why does it work?!?!
+    public int hashCode(){
+        int prime1 = 31;
+        int prime2 = 17;
+        
+        int hash = 1;
+        hash = prime1 * hash + this.year;
+        hash = prime1 * hash + this.month;
+        hash = prime1 * hash + this.day;
+        return hash;
+        
+    }
 
 }
