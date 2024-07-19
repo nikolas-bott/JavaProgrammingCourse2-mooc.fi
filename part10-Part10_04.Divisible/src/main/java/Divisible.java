@@ -19,7 +19,12 @@ public class Divisible {
     }
 
     public static ArrayList<Integer> divisible(ArrayList<Integer> numbers) {
-        return new ArrayList<>();
+        
+        ArrayList<Integer> div = numbers.stream()
+                .filter(s -> s%2==0 || s%3 == 0 || s%5 ==0)
+                .collect(Collectors.toCollection(ArrayList::new));
+                
+        return div;   
     }
 
 }
