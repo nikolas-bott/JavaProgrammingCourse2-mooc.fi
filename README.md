@@ -1,2 +1,2 @@
 # JavaProgrammingCourse2-mooc.fi
-NOT FINISHED!!!
+NOT FINISHED YET!!!
